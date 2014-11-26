@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> PORTFOLIO | EBOLA </title>
+<style>
+	div.mainDiv
+	{
+		margin-top:50px;
+		margin-left:100px;
+		margin-right:100px;
+		padding:100px;
+		font-family:sans-serif;
+	}
+	
+	h1
+	{
+		font-size: 300%;
+	}
+	
+	table
+	{
+		border-collapse: collapse;
+		height:100%;
+		width:100%;
+	}
+	
+	td
+	{		
+		border:5px solid white;
+		border-collapse: collapse;
+		text-align: left;
+		background-color: white;
+	}
+	
+	a
+	{
+	
+		text-decoration: none;
+	}
+	
+	a:link
+	{
+		color: black;
+	}
+	
+	a:visited
+	{
+		color: black;
+	}
+	
+	a:hover
+	{
+		color: #6495ED;
+	}
+	
+	a:active
+	{
+		color: #6495ED;
+	}
+	
+	a.previous:link
+	{
+		color: grey;
+	}
+	
+	a.previous:visited
+	{
+		color: grey;
+	}
+	
+	a.previous:hover
+	{
+		color: #6495ED;
+	}
+	
+	a.previous:active
+	{
+		color: #6495ED;
+	}
+</style>
+    <script src="js/processing.js"></script>
+    <script src="js/jquery.js"></script>
+
+</head>
+
+<body>
+
+<div class="mainDiv">
+	<h1><a class="previous" href="http://www.jasongjacob.com/portfolio/">PORTFOLIO</a> EBOLA DEATHS</h1>
+	<p>This Theme River visualization shows deaths per country per month caused by Ebola.
+	Mouse over each stream to see data about each country.</p>
+	<p>Data courtesy of this <a href="https://github.com/cmrivers/ebola/blob/master/country_timeseries.csv">Github repository</a>.</p>
+	<section style="width:700px height:500px">
+       
+        <canvas id="processing" data-processing-sources="ebola.pde ColorRGB.pde Graph.pde"></canvas>
+	</section>
+</div>
+
+</body>
+</html>
+
+
+
